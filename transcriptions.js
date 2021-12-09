@@ -16,7 +16,7 @@ $(document).ready(() => {
     const c = window.matchMedia("(min-device-width: 768px)");
     const d = window.matchMedia("(min-device-height: 768px)");
 
-    if ((x.matches || y.matches) && z.matches && a.matches && f.matches) {
+    if ((x.matches || y.matches) && z.matches && f.matches) {
     $('.transcriptions').slideDown('slow');
     
     $('.open-transcriptions').on('click', () => {
@@ -45,6 +45,21 @@ $(document).ready(() => {
         $('.open-transcriptions').find('.icon').removeClass('rotate');
         $('.open-simulations').find('.icon').removeClass('rotate');
     })
+
+    //hide menu when scrolling down and show it when moving up
+    let oldValue = 0;
+    let newValue = 0;
+    window.addEventListener('scroll', (e) => {
+    newValue = window.pageYOffset;
+    if (oldValue < newValue) {
+        $('.topMenu').slideUp('slow');
+        $('#workmenu').animate({'margin-top': '0px'}, 200);
+    } else if (oldValue > newValue) {
+        $('.topMenu').slideDown('slow');
+        $('#workmenu').animate({'margin-top': '225px'}, 200);
+    }
+    oldValue = newValue;
+    });
     } else if ((x.matches || y.matches) && b.matches && c.matches && d.matches && a.matches) {
         //ipad menu control
         
