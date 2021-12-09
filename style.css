@@ -962,7 +962,7 @@ p {
       font-size: 32px;
     }
 
-    .text {
+    /* .text {
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 20;
       color: white;
@@ -977,7 +977,7 @@ p {
       left: 0px;
       padding-top: 20%;
       display: block;
-    } 
+    }  */
 }
 
 /* Landscape pr 3*/
@@ -1191,7 +1191,7 @@ p {
       font-size: 45px;
     }
 
-    .text {
+    /* .text {
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 20;
       color: white;
@@ -1206,7 +1206,7 @@ p {
       left: 0px;
       padding-top: 20%;
       display: block;
-    } 
+    }  */
 
 }
 
