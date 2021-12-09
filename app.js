@@ -339,10 +339,10 @@ $(document).ready(() => {
         let newValue = 0;
         window.addEventListener('scroll', (e) => {
         newValue = window.pageYOffset;
-        if (oldValue < newValue) {
+        if ((oldValue + 75) < newValue) {
             $('.topMenu').slideUp('slow');
        
-        } else if (oldValue > newValue) {
+        } else if ((oldValue - 75) > newValue) {
             $('.topMenu').slideDown('slow');
         
         }

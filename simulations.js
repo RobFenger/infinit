@@ -56,10 +56,10 @@ $(document).ready(() => {
     let newValue = 0;
     window.addEventListener('scroll', (e) => {
     newValue = window.pageYOffset;
-    if (oldValue < newValue) {
+    if ((oldValue + 75) < newValue) {
         $('.topMenu').slideUp('slow');
         $('#workmenu').animate({'margin-top': '0px'}, 200);
-    } else if (oldValue > newValue) {
+    } else if ((oldValue - 75) > newValue) {
         $('.topMenu').slideDown('slow');
         $('#workmenu').animate({'margin-top': '225px'}, 200);
     }
