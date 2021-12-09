@@ -721,21 +721,21 @@ p {
     #About b {
       margin-top: 50px;
       margin-bottom: 50px;
-      font-size: 45px;
+      font-size: 60px;
     }
 
     #About p {
-      font-size: 35px;
+      font-size: 40px;
     }
 
     #Text b {
       margin-top: 50px;
       margin-bottom: 50px;
-      font-size: 45px;
+      font-size: 60px;
     }
 
     #Text p {
-      font-size: 35px;
+      font-size: 40px;
     }
 
     #time1-img {
@@ -759,11 +759,11 @@ p {
 }
 
     #Concept b {
-      font-size: 45px;
+      font-size: 60px;
     }
 
     #Concept p {
-      font-size: 35px;
+      font-size: 40px;
     }
 
     .soundcloud-height {
