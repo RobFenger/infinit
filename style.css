@@ -601,7 +601,7 @@ p {
 /* Portrait and Landscape  pr 2*/
 @media only screen 
   and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (-webkit-min-device-pixel-ratio: 2){  
     .topMenu {
       height: 220px;
     }
@@ -624,12 +624,17 @@ p {
       position: fixed;
       margin-top: 220px;
       right: 5%;
-      font-size: 25px;
+      font-size: 35px;
     }
-    
-    .social-icon {
-      width: 18px;  
+
+    .contact h2 {
+      font-size: 35px
     }
+
+    .contact p {
+      font-size: 30px;
+    }
+
 
     #slideshow {
       overflow: visible;
@@ -638,11 +643,14 @@ p {
     #Bio_text {
       float: left;
       margin-top: 225px;
-      font-size: 24px;
     }
 
-    figcaption {
-      font-size: 24px;
+    #Bio_text p {
+      font-size: 35px;
+    }
+
+    figcaption i {
+      font-size: 45px;
     }
 
     #workmenu {
@@ -679,12 +687,40 @@ p {
         width: 100%;
     }
 
+    .flexBox {
+      margin-bottom: 100px;
+    }
+
+    .title {
+      font-size: 80px;
+    }
+
+    .subtitle {
+      font-size: 60px;
+    }
+
     .information b {
       font-size: 40px;
     }
 
     .information p {
       font-size: 25px;
+    }
+
+    #About {
+      font-size: 40px;
+    }
+
+    #About p {
+      font-size: 32px;
+    }
+
+    #Text {
+      font-size: 40px;
+    }
+
+    #Text p {
+      font-size: 32px;
     }
 
     #time1-img {
@@ -697,15 +733,16 @@ p {
 /* Portrait  pr 2*/
 @media only screen 
   
-  and (max-device-width: 667px) 
+  and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
     #slideshow {
       top: 250px;
-      right: 450px;
-      left: 5%;
+      right: 550px;
+      left: 80px;
       height: 2700px;
       border-radius: 5px;
+      overflow: hidden;
     }
 
     #Bio_text {
@@ -757,7 +794,6 @@ p {
     }
 
     #Bio_text {
-      font-size: 24px;
       width: 48%;
     }
 
@@ -811,7 +847,19 @@ p {
       position: fixed;
       margin-top: 220px;
       right: 5%;
-      font-size: 25px;
+      /* font-size: 25px; */
+    }
+
+    .contact h2 {
+      font-size: 40px;
+    }
+
+    .contact p {
+      font-size: 35px;
+    }
+
+    .social {
+      font-size: 35px;
     }
     
     .social-icon {
@@ -825,7 +873,10 @@ p {
     #Bio_text {
       float: left;
       margin-top: 225px;
-      font-size: 24px;
+    }
+
+    #Bio_text p {
+      font-size: 35px;
     }
 
     figcaption {
@@ -842,6 +893,30 @@ p {
 
     .information p {
       font-size: 25px;
+    }
+
+    .title {
+      font-size: 80px;
+    }
+
+    .subtitle {
+      font-size: 60px;
+    }
+
+    #About {
+      font-size: 40px;
+    }
+
+    #About p {
+      font-size: 32px;
+    }
+
+    #Text {
+      font-size: 40px;
+    }
+
+    #Text p {
+      font-size: 32px;
     }
 }
 
@@ -860,7 +935,6 @@ p {
     }
 
     #Bio_text {
-      font-size: 24px;
       width: 48%;
     }
 
