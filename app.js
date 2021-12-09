@@ -334,6 +334,21 @@ $(document).ready(() => {
 
         observerOne.observe($('.entry-one')[0]);
 
+         //hide menu when scrolling down and show it when moving up
+        let oldValue = 0;
+        let newValue = 0;
+        window.addEventListener('scroll', (e) => {
+        newValue = window.pageYOffset;
+        if (oldValue < newValue) {
+            $('.topMenu').slideUp('slow');
+            $('#workmenu').animate({'margin-top': '0px'}, 200);
+        } else if (oldValue > newValue) {
+            $('.topMenu').slideDown('slow');
+            $('#workmenu').animate({'margin-top': '225px'}, 200);
+        }
+        oldValue = newValue;
+        });
+
     
     } else if ((x.matches || y.matches) && b.matches && c.matches && d.matches) {
         //ipad menu control

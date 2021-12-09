@@ -3,7 +3,7 @@ $(document).ready(() => {
 let slideShowPics = [
     "installation_on.jpg",
     "P1011929.JPG",
-    "_MG_0964.jpg",
+    "MG_0964.jpg",
     "vlcsnap-2018-02-08-20h51m09s492.jpg",
     "castle.jpg",
     "distruptive_silencing_08.jpg"

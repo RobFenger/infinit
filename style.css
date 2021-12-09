@@ -611,6 +611,9 @@ p {
   and (-webkit-min-device-pixel-ratio: 2){  
     .topMenu {
       height: 220px;
+      z-index: 2;
+      background-color: white;
+      top: 0px;
     }
     
     .menuu  {
@@ -663,8 +666,8 @@ p {
     #workmenu {
       position: fixed; 
       margin-top: 225px;
-      font-size: 40px;
-      width: 400px;
+      font-size: 55px;
+      width: 600px;
     }
 
     .imageContainer {
@@ -718,9 +721,12 @@ p {
       font-size: 40px;
     }
 
+    #About {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
     #About b {
-      margin-top: 150px;
-      margin-bottom: 50px;
       font-size: 60px;
     }
 
@@ -728,9 +734,20 @@ p {
       font-size: 40px;
     }
 
+    #About i {
+      font-size: 40px;
+    }
+
+    #About u {
+      font-size: 60px;
+    }
+
+    #Text {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
     #Text b {
-      margin-top: 150px;
-      margin-bottom: 150px;
       font-size: 60px;
     }
 
@@ -755,7 +772,8 @@ p {
     
 
 #Concept {
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
     #Concept b {
@@ -773,8 +791,8 @@ p {
     } 
 
     iframe {
-      margin-top: 150px;
-      margin-bottom: 150px;
+      margin-top: 100px;
+      margin-bottom: 100px;
     }
 }
 
@@ -851,7 +869,7 @@ p {
     }
 
     .imageContainer {
-      margin-left: 450px;
+      margin-left: 650px;
       top: 225px;
       padding-top: 10px;
       width: 2000px;

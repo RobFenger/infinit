@@ -18,7 +18,7 @@ $(document).ready(() => {
      const d = window.matchMedia("(min-device-height: 768px)");
    
 
-    if ((x.matches || y.matches) && z.matches && a.matches && f.matches) {
+    if ((x.matches || y.matches) && z.matches && f.matches) {
         $('.simulations').slideDown('slow');
 
     $('.open-transcriptions').on('click', () => {
@@ -47,7 +47,20 @@ $(document).ready(() => {
         $('.open-transcriptions').find('.icon').removeClass('rotate');
         $('.open-simulations').find('.icon').removeClass('rotate');
     })
-    } else if ((x.matches || y.matches) && b.matches && c.matches && d.matches && a.matches) {
+
+    //hide menu when scrolling down and show it when moving up
+    let oldValue = 0;
+    let newValue = 0;
+    window.addEventListener('scroll', (e) => {
+    newValue = window.pageYOffset;
+    if (oldValue < newValue) {
+        $('.topMenu').slideUp('slow');
+    } else if (oldValue > newValue) {
+        $('.topMenu').slideDown('slow');
+    }
+    oldValue = newValue;
+    });
+    } else if ((x.matches || y.matches) && b.matches && c.matches && d.matches) {
         //ipad menu control
         
         $('.simulations').slideDown('slow');
