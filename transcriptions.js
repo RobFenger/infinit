@@ -17,34 +17,36 @@ $(document).ready(() => {
     const d = window.matchMedia("(min-device-height: 768px)");
 
     if ((x.matches || y.matches) && z.matches && f.matches) {
-    $('.transcriptions').slideDown('slow');
+        $('#workmenu').hide();
+   
+    // $('.transcriptions').slideDown('slow');
     
-    $('.open-transcriptions').on('click', () => {
-        $('.transcriptions').slideToggle('slow');
-        $('.simulations').slideUp('slow');
-        $('.collaborations').slideUp('slow');
-        $('.open-transcriptions').find('.icon').toggleClass('rotate');
-        $('.open-simulations').find('.icon').removeClass('rotate');
-        $('.open-collaborations').find('.icon').removeClass('rotate');
-    })
+    // $('.open-transcriptions').on('click', () => {
+    //     $('.transcriptions').slideToggle('slow');
+    //     $('.simulations').slideUp('slow');
+    //     $('.collaborations').slideUp('slow');
+    //     $('.open-transcriptions').find('.icon').toggleClass('rotate');
+    //     $('.open-simulations').find('.icon').removeClass('rotate');
+    //     $('.open-collaborations').find('.icon').removeClass('rotate');
+    // })
 
-    $('.open-simulations').on('click', () => {
-        $('.simulations').slideToggle('slow');
-        $('.collaborations').slideUp('slow');
-        $('.transcriptions').slideUp('slow');
-        $('.open-simulations').find('.icon').toggleClass('rotate');
-        $('.open-collaborations').find('.icon').removeClass('rotate');
-        $('.open-transcriptions').find('.icon').removeClass('rotate');
-    })
+    // $('.open-simulations').on('click', () => {
+    //     $('.simulations').slideToggle('slow');
+    //     $('.collaborations').slideUp('slow');
+    //     $('.transcriptions').slideUp('slow');
+    //     $('.open-simulations').find('.icon').toggleClass('rotate');
+    //     $('.open-collaborations').find('.icon').removeClass('rotate');
+    //     $('.open-transcriptions').find('.icon').removeClass('rotate');
+    // })
     
-    $('.open-collaborations').on('click', () => {
-        $('.collaborations').slideToggle('slow');
-        $('.transcriptions').slideUp('slow');
-        $('.simulations').slideUp('slow');
-        $('.open-collaborations').find('.icon').toggleClass('rotate');
-        $('.open-transcriptions').find('.icon').removeClass('rotate');
-        $('.open-simulations').find('.icon').removeClass('rotate');
-    })
+    // $('.open-collaborations').on('click', () => {
+    //     $('.collaborations').slideToggle('slow');
+    //     $('.transcriptions').slideUp('slow');
+    //     $('.simulations').slideUp('slow');
+    //     $('.open-collaborations').find('.icon').toggleClass('rotate');
+    //     $('.open-transcriptions').find('.icon').removeClass('rotate');
+    //     $('.open-simulations').find('.icon').removeClass('rotate');
+    // })
 
     //hide menu when scrolling down and show it when moving up
     let oldValue = 0;

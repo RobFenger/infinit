@@ -341,10 +341,10 @@ $(document).ready(() => {
         newValue = window.pageYOffset;
         if (oldValue < newValue) {
             $('.topMenu').slideUp('slow');
-            $('#workmenu').animate({'margin-top': '0px'}, 200);
+       
         } else if (oldValue > newValue) {
             $('.topMenu').slideDown('slow');
-            $('#workmenu').animate({'margin-top': '225px'}, 200);
+        
         }
         oldValue = newValue;
         });
