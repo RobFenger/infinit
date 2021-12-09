@@ -334,20 +334,20 @@ $(document).ready(() => {
 
         observerOne.observe($('.entry-one')[0]);
 
-         //hide menu when scrolling down and show it when moving up
-        let oldValue = 0;
-        let newValue = 0;
-        window.addEventListener('scroll', (e) => {
-        newValue = window.pageYOffset;
-        if ((oldValue + 50) < newValue) {
-            $('.topMenu').slideUp('slow');
+        //  //hide menu when scrolling down and show it when moving up
+        // let oldValue = 0;
+        // let newValue = 0;
+        // window.addEventListener('scroll', (e) => {
+        // newValue = window.pageYOffset;
+        // if ((oldValue + 50) < newValue) {
+        //     $('.topMenu').slideUp('slow');
        
-        } else if ((oldValue - 50) > newValue) {
-            $('.topMenu').slideDown('slow');
+        // } else if ((oldValue - 50) > newValue) {
+        //     $('.topMenu').slideDown('slow');
         
-        }
-        oldValue = newValue;
-        });
+        // }
+        // oldValue = newValue;
+        // });
 
     
     } else if ((x.matches || y.matches) && b.matches && c.matches && d.matches) {

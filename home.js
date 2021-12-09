@@ -48,6 +48,7 @@ const timer = () => {
             color: 'white'
         });
         $('.topMenu').css({borderBottom: '1px solid white'});
+        $('.topMenu').css({backgroundColor: 'black'});
         $('.menuu').children().css({color: 'white'});
         $('a').css('color', 'white');
         $('.menuu').children().not('.no-hover').on('mouseenter', event => {      //.not('#works') if you don't want works to hover
@@ -69,6 +70,7 @@ const timer = () => {
             color: 'black'
         });
         $('.topMenu').css({borderBottom: '1px solid black'});
+        $('.topMenu').css({backgroundColor: 'white'});
         $('.menuu').children().css({color: 'black'});
         $('a').css('color', 'black');
         $('.menuu').children().not('.no-hover').on('mouseenter', event => {      

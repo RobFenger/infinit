@@ -45,7 +45,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   border-bottom: black solid 1px;
-  transition: color 2s;
+  transition: color 2s, background-color 2s;
 }
 
 .menuu  {
@@ -869,15 +869,15 @@ p {
     }
 
     .imageContainer {
-      margin-left: 650px;
+      margin-left: 35%;
       top: 225px;
       padding-top: 10px;
-      width: 2000px;
+      width: 65%;
     }
     
     .flexImage {
-      width: 600px;
-      height: 350px;
+      width: 750px;
+      height: 420px;
     }
 
     .group {
