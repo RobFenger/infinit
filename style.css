@@ -83,6 +83,10 @@ a:hover {
   width: 200px;
 }
 
+.icon {
+  float: right;
+}
+
 /*----------------------------------------------------content [style] */
 .text {
   font-family: 'Roboto Condensed', sans-serif;
@@ -259,6 +263,10 @@ h2 {
   width: 45%;
 }
 
+#Concept {
+  font-size: 14px;
+}
+
 .title {
   font-family: 'Hind', sans-serif;
   font-style: normal;
@@ -295,9 +303,8 @@ p {
   height: 100;
 }
 
-.icon {
-  float: right;
-  transition: transform 1s;
+.soundcloud-height {
+  height: 166px;
 }
 
 .rotate {
@@ -699,49 +706,70 @@ p {
       font-size: 60px;
     }
 
+    #collab {
+      font-size: 60px;
+    }
+
     .information b {
-      font-size: 40px;
+      font-size: 60px;
     }
 
     .information p {
-      font-size: 25px;
+      font-size: 40px;
     }
 
     #About {
+      margin-top: 50px;
+      margin-bottom: 50px;
       font-size: 45px;
     }
 
     #About p {
-      font-size: 37px;
+      font-size: 30px;
     }
 
     #Text {
+      margin-top: 50px;
+      margin-bottom: 50px;
       font-size: 45px;
     }
 
     #Text p {
-      font-size: 37px;
+      font-size: 30px;
     }
 
     #time1-img {
       width: 32%;
     }
+
+    /* #Location */
       
-    .text {
-      font-family: 'Roboto Condensed', sans-serif;
-      font-weight: 20;
+     /* .text {
       color: white;
-      background-color: black;
-      opacity: 0.5;
-      font-size: 30px;
-      position: absolute;
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      top: 0px;
-      left: 0px;
-      padding-top: 20%;
+      opacity: 0.8;
+      font-size: 40px;
       display: block;
+      top: -200px;
+    }   */
+
+    
+
+#Concept {
+  margin-bottom: 50px;
+}
+
+    #Concept b {
+      font-size: 45px;
+    }
+
+    #Concept p {
+      font-size: 30px;
+    }
+
+    .soundcloud-height {
+      height: 200px;
+      margin-top: 50px;
+      margin-bottom: 50px;
     } 
 }
 
@@ -1202,6 +1230,22 @@ p {
       top: 225px;
       width: 80%;
   }
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px)
+  and (min-device-height: 768px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .imageContainer {
+      margin-left: 0px;
+      width: 100%;
+    }
+
+    #workmenu {
+      visibility: hidden;
+    }
   }
 
 

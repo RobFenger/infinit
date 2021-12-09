@@ -263,7 +263,8 @@ $(document).ready(() => {
     const c = window.matchMedia("(min-device-width: 768px)");
     const d = window.matchMedia("(min-device-height: 768px)");
 
-    if ((x.matches || y.matches) && z.matches && a.matches && f.matches) {
+    if ((x.matches || y.matches) && z.matches && f.matches) {
+        //mobile device
         $('.simulations').slideDown('slow');
         $('.collaborations').hide();
         $('.transcriptions').hide();
