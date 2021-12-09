@@ -727,7 +727,22 @@ p {
       width: 32%;
     }
       
-  
+    .text {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 20;
+      color: white;
+      background-color: black;
+      opacity: 0.5;
+      font-size: 30px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      padding-top: 20%;
+      display: block;
+    } 
 }
 
 /* Portrait  pr 2*/
@@ -918,6 +933,23 @@ p {
     #Text p {
       font-size: 32px;
     }
+
+    .text {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 20;
+      color: white;
+      background-color: black;
+      opacity: 0.5;
+      font-size: 30px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      padding-top: 20%;
+      display: block;
+    } 
 }
 
 /* Landscape pr 3*/
@@ -1131,6 +1163,22 @@ p {
       font-size: 45px;
     }
 
+    .text {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 20;
+      color: white;
+      background-color: black;
+      opacity: 0.5;
+      font-size: 45px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      padding-top: 20%;
+      display: block;
+    } 
 
 }
 
