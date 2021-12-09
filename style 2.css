@@ -1,0 +1,203 @@
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 20;
+  text-align: left;
+  text-decoration: none !important;
+}
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 20;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+h3 {
+  font-family: 'Hind', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 1;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+h5 {
+  font-family: 'Hind', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 1;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#cvEntry {
+  font-family: Arial, narrow;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#Collaborators {
+  font-family: Arial, narrow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#Software {
+  font-family: Arial, narrow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#Location {
+  font-family: Arial, narrow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#Text {
+  font-family: Arial, narrow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#About {
+  font-family: Arial, narrow;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+
+#Bio_text {
+  font-family: Arial, narrow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+#Materials {
+  font-family: Arial, narrow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#titel {
+  font-family: 'Hind', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#subtitel {
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#titel2 {
+  font-family: 'Hind', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#subtitel2 {
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#subtitel3  {
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#subtitel4  {
+  font-family: 'Hind', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#imagetext {
+  font-family: 'Hind', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+#workinfinit {
+   background-color: black;
+   color: white;
+}
+
+p {
+  font-family: 'Arial, narrow', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 10;
+  text-align: left;
+  text-decoration: none !important;
+}
+
+
+a {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+b {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
