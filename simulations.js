@@ -69,8 +69,8 @@ $(document).ready(() => {
         //ipad menu control
         
         $('.simulations').slideDown('slow');
-        $('.transcriptions').slideDown('slow');
-        $('.collaborations').slideDown('slow');
+        // $('.transcriptions').slideDown('slow');
+        // $('.collaborations').slideDown('slow');
  
  
         $('.open-simulations').on('click', () => {

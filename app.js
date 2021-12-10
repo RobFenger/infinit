@@ -376,25 +376,93 @@ $(document).ready(() => {
     } else if ((x.matches || y.matches) && b.matches && c.matches && d.matches) {
         //ipad menu control
 
-        $('#workmenu').slideDown('slow');
-        
+        //start with open simulations
         $('.simulations').slideDown('slow');
         $('.transcriptions').slideDown('slow');
-        $('.collaborations').slideDown('slow');
- 
- 
+        $('.open-simulations').find('.icon').addClass('rotate');
+        $('.open-transcriptions').find('.icon').addClass('rotate');
+
+        //make cursor pointer to note that you can open the menu
+        $('.open-simulations').css('cursor', 'pointer');
+        $('.open-collaborations').css('cursor', 'pointer');
+
+        //open the menu on left-side and scroll down to the section
         $('.open-simulations').on('click', () => {
-            $('.simulations').slideToggle('slow');
-            $('.open-simulations').find('.icon').toggleClass('rotate');
-        })
-        $('.open-transcriptions').on('click', () => {
-            $('.transcriptions').slideToggle('slow');
-            $('.open-transcriptions').find('.icon').toggleClass('rotate');
+            $('html, body').animate({
+                scrollTop: '0px'
+            },1000);
+            $('.simulations').slideDown('slow');
+            $('.collaborations').slideUp('slow');
+            $('.open-simulations').find('.icon').addClass('rotate');
+            $('.open-collaborations').find('.icon').removeClass('rotate');
         })
         $('.open-collaborations').on('click', () => {
-            $('.collaborations').slideToggle('slow');
-            $('.open-collaborations').find('.icon').toggleClass('rotate');
+            $('html, body').animate({
+                scrollTop: ($('.entry-two').offset().top)
+            },1000);
+            $('.collaborations').slideDown('slow');
+            $('.simulations').slideUp('slow');
+            $('.open-collaborations').find('.icon').addClass('rotate');
+            $('.open-simulations').find('.icon').removeClass('rotate');
         })
+     
+
+
+        //open the corresponding menu when scrolling down or up
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    $('.collaborations').slideDown('slow');
+                    $('.simulations').slideUp('slow');
+                    $('.open-collaborations').find('.icon').addClass('rotate');
+                    $('.open-simulations').find('.icon').removeClass('rotate');
+                    // if ((x.matches || y.matches) && z.matches && a.matches && f.matches) {
+                    //     $('.transcriptions').slideUp('slow');
+                    //     $('.open-transcriptions').find('.icon').removeClass('rotate');
+                    // }
+                }
+            })
+        })
+
+        observer.observe($('.entry-two')[0]);
+
+        const observerOne = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    $('.simulations').slideDown('slow');
+                    $('.collaborations').slideUp('slow');
+                    $('.open-simulations').find('.icon').addClass('rotate');
+                    $('.open-collaborations').find('.icon').removeClass('rotate');
+                    // if ((x.matches || y.matches) && z.matches && a.matches && f.matches) {
+                    //     $('.transcriptions').slideUp('slow');
+                    //     $('.open-transcriptions').find('.icon').removeClass('rotate');
+                    // }
+                }
+            })
+        })
+
+        observerOne.observe($('.entry-one')[0]);
+    
+
+        // $('#workmenu').slideDown('slow');
+        
+        // $('.simulations').slideDown('slow');
+        // $('.transcriptions').slideDown('slow');
+        // $('.collaborations').slideDown('slow');
+ 
+ 
+        // $('.open-simulations').on('click', () => {
+        //     $('.simulations').slideToggle('slow');
+        //     $('.open-simulations').find('.icon').toggleClass('rotate');
+        // })
+        // $('.open-transcriptions').on('click', () => {
+        //     $('.transcriptions').slideToggle('slow');
+        //     $('.open-transcriptions').find('.icon').toggleClass('rotate');
+        // })
+        // $('.open-collaborations').on('click', () => {
+        //     $('.collaborations').slideToggle('slow');
+        //     $('.open-collaborations').find('.icon').toggleClass('rotate');
+        // })
     } else {
 
         //start with open simulations

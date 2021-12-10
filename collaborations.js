@@ -67,9 +67,10 @@ $(document).ready(() => {
     } else if ((x.matches || y.matches) && b.matches && c.matches && d.matches && a.matches) {
         //ipad menu control
         
-        $('.simulations').slideDown('slow');
-        $('.transcriptions').slideDown('slow');
         $('.collaborations').slideDown('slow');
+        // $('.simulations').slideDown('slow');
+        // $('.transcriptions').slideDown('slow');
+        
  
  
         $('.open-simulations').on('click', () => {
