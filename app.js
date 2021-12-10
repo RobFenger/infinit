@@ -21,6 +21,9 @@ $(document).ready(() => {
         $('.simulations').children().css({color: 'white'});
         $('.transcriptions').children().css({color: 'white'});
         $('.collaborations').children().css({color: 'white'});
+        $('.simulations-open').children().css({color: 'white'});
+        $('.transcriptions-open').children().css({color: 'white'});
+        $('.collaborations-open').children().css({color: 'white'});
     })
     $('.invert').on('mouseleave', () => {
         $('body').css({
@@ -34,6 +37,9 @@ $(document).ready(() => {
         $('.simulations').children().css({color: 'black'});
         $('.transcriptions').children().css({color: 'black'});
         $('.collaborations').children().css({color: 'black'});
+        $('.simulations-open').children().css({color: 'black'});
+        $('.transcriptions-open').children().css({color: 'black'});
+        $('.collaborations-open').children().css({color: 'black'});
 
         //to get the hover effect back
         const hoverEffect = () => {
