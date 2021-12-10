@@ -1,6 +1,7 @@
 $(document).ready(() => {
     $('.topMenu').css('border-bottom', '1px solid white');
     $('.topMenu').css('background-color', 'black');
+    $('h1').css('color', 'white');
     $('.menuu').children().css('color', 'white');
     $('.menuu').children().not('#works').on('mouseenter', event => {      //.not('#works') if you don't want works to hover
         $(event.currentTarget).css('color', 'lightgrey');

@@ -619,6 +619,14 @@ p {
       background-color: white;
       top: 0px;
     }
+
+    body {
+      background-color: white;
+    }
+
+    .simulations, .open-simulations, .transcriptions, .open-transcriptions, .collaborations, .open-collaborations {
+      color: black;
+    }
     
     .menuu  {
       margin-top: 130px;
