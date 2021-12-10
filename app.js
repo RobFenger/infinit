@@ -461,7 +461,7 @@ $(document).ready(() => {
         // })
     } else {
 
-        //start with open simulations
+        //start with open simulations and keep transcriptions open
         $('.simulations').slideDown('slow');
         $('.transcriptions').slideDown('slow');
         $('.open-simulations').find('.icon').addClass('rotate');
