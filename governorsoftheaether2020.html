@@ -103,6 +103,19 @@ body {
      .foto2, .foto3 {
          width: 49%;
      }
+
+     #subtitel2, #subtitel3 {
+        font-size: 40px;
+     }
+  }
+
+  @media only screen 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+   #governor {
+      width: 48%;
+   }
   }
 
 @media only screen 
@@ -252,7 +265,7 @@ body {
 <div id="subtitel3"><br>Material Documentation <a id="shots">shots by Menghan Wang</a><br></div>
 
      
-      <img src="all.jpg" style="height:auto; width:100%;">
+      <img src="All.jpg" style="height:auto; width:100%;">
 
 
     
@@ -347,7 +360,7 @@ body {
                    <img src="Saturn.jpg">
   </figure>
 
-  <figure class="foto3">
+  <figure class="foto3" id='governor'>
      <figcaption class="line-height">
       <div class="margins"><b>Documentation Broadcast | Cashmere Radio</b><br></div>
          <a id="shots">shots by Menghan Wang</a>

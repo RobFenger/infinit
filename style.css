@@ -725,6 +725,10 @@ p {
       font-size: 60px;
     }
 
+    #Location {
+      overflow: hidden;
+    }
+
     .information b {
       font-size: 60px;
     }
