@@ -283,8 +283,8 @@ $(document).ready(() => {
     const a = window.matchMedia("(orientation: landscape)");
 
     const b = window.matchMedia("(max-device-width: 1366px)");
-    const c = window.matchMedia("(min-device-width: 768px)");
-    const d = window.matchMedia("(min-device-height: 768px)");
+    const c = window.matchMedia("(min-device-width: 767px)");
+    const d = window.matchMedia("(min-device-height: 767px)");
 
     if ((x.matches || y.matches) && z.matches && f.matches) {
         //mobile device
