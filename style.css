@@ -1341,3 +1341,438 @@ p {
   }
 
 
+/* test ------------------------------------------------------------ */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px)
+  and (min-device-height: 768px)
+   {
+    body {
+      background-color: white;
+    }
+
+    .simulations, .open-simulations, .transcriptions, .open-transcriptions, .collaborations, .open-collaborations {
+      color: black;
+    }
+
+    .topMenu {
+      height: 220px;
+    }
+    
+    .menuu  {
+      margin-top: 130px;
+    }
+    
+    .menuu a, .menuu b {
+      font-size: 60px;
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 100px;
+    } 
+
+    .info {
+      position: fixed;
+      margin-top: 220px;
+      right: 5%;
+      font-size: 45px;
+    }
+
+    .info h2 {
+      font-size: 45px;
+    }
+
+    .info p {
+      font-size: 45px;
+    }
+    
+    .social-icon {
+      width: 25px;  
+    }
+
+    #slideshow {
+      top: 250px;
+      right: 950px;
+      left: 5%;
+      height: 2700px;
+      border-radius: 5px;
+    }
+
+    #Bio_text {
+      float: left;
+      margin-top: 225px;
+      font-size: 45px;
+      width: 45%;
+    }
+
+    #Bio_text p {
+      font-size: 45px;
+    }
+
+    figure {
+      margin-top: 325px;
+      margin-left: 1%;
+      width: 50%;
+    }
+
+    figcaption i {
+      font-size: 35px;
+    }
+
+    #workmenu {
+      position: fixed; 
+      margin-top: 325px;
+      font-size: 40px;
+      width: 15%;
+      display: none;
+    }
+
+    #workmenu a {
+      font-size: 60px;
+    }
+
+    #workmenu b {
+      font-size: 60px;
+    }
+    
+    .imageContainer {
+      margin-left: 22%;
+      top: 225px;
+      padding-top: 100px;
+      width: 80%;
+    }
+
+    .flexBox {
+      margin-bottom: 100px;
+    }
+    
+    .flexImage {
+      width: 900px;
+      height: 525px;
+    }
+    
+    .cvEntry {
+      top: 225px;
+      margin-right: 5%;
+    }
+    
+    .cvEntry p {
+      font-size: 55px;
+    }
+    
+    .group {
+        margin-left: 0px;
+        top: 225px;
+        width: 100%;
+    }
+    
+    .information b {
+      font-size: 60px;
+    }
+    
+    .information p {
+      font-size: 40px;
+    }
+
+    #collab {
+      font-size: 75px;
+    }
+    
+    #time1-img {
+      width: 32%;
+    }
+
+    .title {
+      font-size: 95px;
+    }
+
+    .subtitle {
+      font-size: 75px;
+    }
+
+    #About {
+      font-size: 45px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    #About b {
+      font-size: 60px;
+    }
+
+    #About p {
+      font-size: 45px;
+    }
+
+    #About i {
+      font-size: 45px;
+    }
+
+    #About u { 
+      font-size: 60px;
+    }
+    
+    #Text {
+      font-size: 45px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    #Text b {
+      font-size: 60px;
+    }
+
+    #Text p {
+      font-size: 45px;
+    }
+
+    #Concept b {
+      font-size: 60px;
+    }
+
+    #Concept p {
+      font-size: 40px;
+    }
+
+    .text {
+      font-size: 75px;
+    }
+
+    .soundcloud {
+      height: 150px;
+    }
+
+    .soundcloud-text {
+      font-size: 30px;
+    }
+
+    .video {
+      height: 1700px;
+    } 
+
+    iframe {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+}
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px)
+  and (min-device-height: 768px)
+  and (-webkit-min-device-pixel-ratio: 3)
+   {
+    body {
+      background-color: white;
+    }
+
+    .simulations, .open-simulations, .transcriptions, .open-transcriptions, .collaborations, .open-collaborations {
+      color: black;
+    }
+
+    .topMenu {
+      height: 220px;
+    }
+    
+    .menuu  {
+      margin-top: 130px;
+    }
+    
+    .menuu a, .menuu b {
+      font-size: 60px;
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 100px;
+    } 
+
+    .info {
+      position: fixed;
+      margin-top: 220px;
+      right: 5%;
+      font-size: 45px;
+    }
+
+    .info h2 {
+      font-size: 45px;
+    }
+
+    .info p {
+      font-size: 45px;
+    }
+    
+    .social-icon {
+      width: 25px;  
+    }
+
+    #slideshow {
+      top: 250px;
+      right: 950px;
+      left: 5%;
+      height: 2700px;
+      border-radius: 5px;
+    }
+
+    #Bio_text {
+      float: left;
+      margin-top: 225px;
+      font-size: 45px;
+      width: 45%;
+    }
+
+    #Bio_text p {
+      font-size: 45px;
+    }
+
+    figure {
+      margin-top: 325px;
+      margin-left: 1%;
+      width: 50%;
+    }
+
+    figcaption i {
+      font-size: 35px;
+    }
+
+    #workmenu {
+      position: fixed; 
+      margin-top: 325px;
+      font-size: 40px;
+      width: 15%;
+      display: none;
+    }
+
+    #workmenu a {
+      font-size: 60px;
+    }
+
+    #workmenu b {
+      font-size: 60px;
+    }
+    
+    .imageContainer {
+      margin-left: 22%;
+      top: 225px;
+      padding-top: 100px;
+      width: 80%;
+    }
+
+    .flexBox {
+      margin-bottom: 100px;
+    }
+    
+    .flexImage {
+      width: 900px;
+      height: 525px;
+    }
+    
+    .cvEntry {
+      top: 225px;
+      margin-right: 5%;
+    }
+    
+    .cvEntry p {
+      font-size: 55px;
+    }
+    
+    .group {
+        margin-left: 0px;
+        top: 225px;
+        width: 100%;
+    }
+    
+    .information b {
+      font-size: 60px;
+    }
+    
+    .information p {
+      font-size: 40px;
+    }
+
+    #collab {
+      font-size: 75px;
+    }
+    
+    #time1-img {
+      width: 32%;
+    }
+
+    .title {
+      font-size: 95px;
+    }
+
+    .subtitle {
+      font-size: 75px;
+    }
+
+    #About {
+      font-size: 45px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    #About b {
+      font-size: 60px;
+    }
+
+    #About p {
+      font-size: 45px;
+    }
+
+    #About i {
+      font-size: 45px;
+    }
+
+    #About u { 
+      font-size: 60px;
+    }
+    
+    #Text {
+      font-size: 45px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    #Text b {
+      font-size: 60px;
+    }
+
+    #Text p {
+      font-size: 45px;
+    }
+
+    #Concept b {
+      font-size: 60px;
+    }
+
+    #Concept p {
+      font-size: 40px;
+    }
+
+    .text {
+      font-size: 75px;
+    }
+
+    .soundcloud {
+      height: 150px;
+    }
+
+    .soundcloud-text {
+      font-size: 30px;
+    }
+
+    .video {
+      height: 1700px;
+    } 
+
+    iframe {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+}

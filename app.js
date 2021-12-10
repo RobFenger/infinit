@@ -382,10 +382,6 @@ $(document).ready(() => {
         $('.open-simulations').find('.icon').addClass('rotate');
         $('.open-transcriptions').find('.icon').addClass('rotate');
 
-        //make cursor pointer to note that you can open the menu
-        $('.open-simulations').css('cursor', 'pointer');
-        $('.open-collaborations').css('cursor', 'pointer');
-
         //open the menu on left-side and scroll down to the section
         $('.open-simulations').on('click', () => {
             $('html, body').animate({
@@ -409,7 +405,7 @@ $(document).ready(() => {
 
 
         //open the corresponding menu when scrolling down or up
-        const observer = new IntersectionObserver((entries, observer) => {
+        const observerPad = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     $('.collaborations').slideDown('slow');
@@ -424,9 +420,9 @@ $(document).ready(() => {
             })
         })
 
-        observer.observe($('.entry-two')[0]);
+        observerPad.observe($('.entry-two')[0]);
 
-        const observerOne = new IntersectionObserver((entries, observer) => {
+        const observerPadOne = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     $('.simulations').slideDown('slow');
@@ -441,7 +437,7 @@ $(document).ready(() => {
             })
         })
 
-        observerOne.observe($('.entry-one')[0]);
+        observerPadOne.observe($('.entry-one')[0]);
     
 
         // $('#workmenu').slideDown('slow');
