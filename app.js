@@ -15,6 +15,8 @@ $(document).ready(() => {
             color: 'white'
         });
         $('.topMenu').css({borderBottom: '1px solid white'});
+        $('.topMenu').css({backgroundColor: 'black'});
+        $('h1').css('color', 'white');
         $('.menuu').children().css({color: 'white'});
         $('.simulations').children().css({color: 'white'});
         $('.transcriptions').children().css({color: 'white'});
@@ -26,6 +28,8 @@ $(document).ready(() => {
             color: 'black'
         });
         $('.topMenu').css({borderBottom: '1px solid black'});
+        $('.topMenu').css({backgroundColor: 'white'});
+        $('h1').css('color', 'black');
         $('.menuu').children().css({color: 'black'});
         $('.simulations').children().css({color: 'black'});
         $('.transcriptions').children().css({color: 'black'});
@@ -90,6 +94,8 @@ $(document).ready(() => {
             color: '#FFFFFF'
         }, 1000);
         $('.topMenu').css({borderBottom: '1px solid #FFFFFF'}, 400);
+        $('.topMenu').css({backgroundColor: 'black'});
+        $('h1').css('color', 'white');
         $('.menuu').children().css({color: '#FFFFFF'}, 400);
         $('.simulations').children().css({color: '#FFFFFF'}, 400);
         $('.transcriptions').children().css({color: '#FFFFFF'}, 400);
@@ -103,6 +109,8 @@ $(document).ready(() => {
             color: 'black'
         });
         $('.topMenu').css({borderBottom: '1px solid black'});
+        $('.topMenu').css({backgroundColor: 'white'});
+        $('h1').css('color', 'black');
         $('.menuu').children().css({color: 'black'});
         $('.simulations').children().css({color: 'black'});
         $('.transcriptions').children().css({color: 'black'});
@@ -119,6 +127,8 @@ $(document).ready(() => {
             color: 'white'
         });
         $('.topMenu').css({borderBottom: '1px solid white'});
+        $('.topMenu').css('background-color', 'black');
+        $('h1').css('color', 'white');
         $('.menuu').children().css({color: 'white'});
         $('.simulations').children().css({color: 'white'});
         $('.transcriptions').children().css({color: 'white'});
@@ -132,9 +142,12 @@ $(document).ready(() => {
             color: 'black'
         });
         $('.topMenu').css({borderBottom: '1px solid black'});
+        $('.topMenu').css('background-color', 'white');
+        $('h1').css('color', 'black');
         $('.menuu').children().css({color: 'black'});
         $('.simulations').children().css({color: 'black'});
         $('.transcriptions').children().css({color: 'black'});
+
 
         //to get the hover effect back
         hoverEffect();
@@ -148,6 +161,8 @@ $(document).ready(() => {
             color: 'white'
         });
         $('.topMenu').css({borderBottom: '1px solid white'});
+        $('.topMenu').css('background-color', 'black');
+        $('h1').css('color', 'white');
         $('.menuu').children().css({color: 'white'});
         $('.simulations').children().css({color: 'white'});
         $('.transcriptions').children().css({color: 'white'});
@@ -161,6 +176,8 @@ $(document).ready(() => {
             color: 'black'
         });
         $('.topMenu').css({borderBottom: '1px solid black'});
+        $('.topMenu').css('background-color', 'white');
+        $('h1').css('color', 'black');
         $('.menuu').children().css({color: 'black'});
         $('.simulations').children().css({color: 'black'});
         $('.transcriptions').children().css({color: 'black'});
