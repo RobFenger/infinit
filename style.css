@@ -3,6 +3,8 @@ body {
   margin-right: 5%;
   padding: 0px;
   transition: background-color 2s, color 2s;
+  background-color: white;
+  color: black;
 }
 
 a {
@@ -46,6 +48,8 @@ a:hover {
   justify-content: space-between;
   border-bottom: black solid 1px;
   transition: color 2s, background-color 2s;
+  background-color: white;
+  color: black;
 }
 
 .menuu  {
