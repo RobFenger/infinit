@@ -11,7 +11,7 @@ let slideShowPics = [
 
 
 const y = window.matchMedia("(-webkit-min-device-pixel-ratio: 2)");
-const z = window.matchMedia("(max-device-width: 667px)");
+const z = window.matchMedia("(max-device-width: 1024px)");
 const a = window.matchMedia("(orientation: portrait)");
 // const b = window.matchMedia("(orientation: landscape)");
 

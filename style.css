@@ -1270,12 +1270,16 @@ p {
       font-size: 45px;
     }
 
+    #Concept {
+      font-size: 45px;
+    }
+
     #Concept b {
       font-size: 60px;
     }
 
     #Concept p {
-      font-size: 40px;
+      font-size: 45px;
     }
 
     .text {
