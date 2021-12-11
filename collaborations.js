@@ -25,7 +25,9 @@ $(document).ready(() => {
         //mobile
 
         //slide-test
-        document.addEventListener('swiped', function(e) {
+        const intro = document.getElementById('intro');
+
+        intro.addEventListener('swiped', function(e) {
             console.log(e.target); // element that was swiped
             console.log(e.detail); // see event data below
             console.log(e.detail.dir); // swipe direction
@@ -33,7 +35,9 @@ $(document).ready(() => {
         });
 
         //making little slideshow at pages with 3 imgs in a row
-        $('.intro-img').on('swiped-right', () => {
+        
+
+        intro.addEventListener('swiped-right', () => {
             // if ($('.img3').css('left') !== '0') {
                 $('.img1').animate({
                     'transform': 'translateX(100%)',
@@ -50,7 +54,7 @@ $(document).ready(() => {
             // } 
         })
 
-        $('.intro-img').on('swiped-left', () => {
+        intro.addEventListener('swiped-left', () => {
             // if ($('.img1').css('left') !== '0') {
                 $('.img1').animate({
                     'transform': 'translateX(-100%)',
