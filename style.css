@@ -901,7 +901,7 @@ p {
 
     @media only screen 
   and (max-device-width: 820px)
-  and (max-device-height: 414px)
+  and (max-device-height: 500px)
   and (-webkit-min-device-pixel-ratio: 2) {
     #slideshow {
       top: 250px;
