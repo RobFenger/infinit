@@ -34,7 +34,7 @@ $(document).ready(() => {
 
         //making little slideshow at pages with 3 imgs in a row
         $('.intro-img').on('swiped-right', () => {
-            if ($('.img3').css('left') !== '0') {
+            // if ($('.img3').css('left') !== '0') {
                 $('.img1').animate({
                     'transform': 'translateX(100%)',
                     'animation-fill-mode': "forwards"
@@ -47,11 +47,11 @@ $(document).ready(() => {
                     'transform': 'translateX(100%)',
                     'animation-fill-mode': "forwards"
                 }, 500);
-            } 
+            // } 
         })
 
         $('.intro-img').on('swiped-left', () => {
-            if ($('.img1').css('left') !== '0') {
+            // if ($('.img1').css('left') !== '0') {
                 $('.img1').animate({
                     'transform': 'translateX(-100%)',
                     'animation-fill-mode': "forwards"
@@ -64,7 +64,7 @@ $(document).ready(() => {
                     'transform': 'translateX(-100%)',
                     'animation-fill-mode': "forwards"
                 }, 500);
-            } 
+            // } 
         })
 
 
