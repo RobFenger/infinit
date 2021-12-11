@@ -11,9 +11,11 @@ $(document).ready(() => {
     //mobile-device menu control
     const x = window.matchMedia("(-webkit-min-device-pixel-ratio: 3)");
     const y = window.matchMedia("(-webkit-min-device-pixel-ratio: 2)");
-    const z = window.matchMedia("(max-device-width: 812px)");
+    const z = window.matchMedia("(max-device-width: 820px)");
+    const e = window.matchMedia("(max-device-width: 414px");
     const a = window.matchMedia("(orientation: landscape)");
-    const f = window.matchMedia("(max-device-height: 767px)");
+    const portrait = window.matchMedia("(orientation: portrait)");
+    const f = window.matchMedia("(max-device-height: 414px)");
     //ipad menu control--------------------------------in development
     const b = window.matchMedia("(max-device-width: 1366px)");
     const c = window.matchMedia("(min-device-width: 768px)");
@@ -21,88 +23,75 @@ $(document).ready(() => {
 
     
 
-    if ((x.matches || y.matches) && z.matches && f.matches) {
+    if ((x.matches || y.matches) && e.matches) {
         //mobile
-
-        //slide-test
-        const intro = document.getElementById('intro');
-
-        intro.addEventListener('swiped', function(e) {
-            console.log(e.target); // element that was swiped
-            console.log(e.detail); // see event data below
-            console.log(e.detail.dir); // swipe direction
-            $('.title').css('color', 'red');
-        });
-
-        //making little slideshow at pages with 3 imgs in a row
         
+        //making little slideshow at pages with 3 imgs in a row
+        const intro = document.getElementById('intro');
+        $('.dot').show();
+        $('.three').css('background-color', '#717171');
+        $('.three').siblings().css('background-color', '#bbb');
 
         intro.addEventListener('swiped-right', () => {
-            // if ($('.img3').css('left') !== '0') {
-                $('.img1').animate({
-                    'transform': 'translateX(100%)',
-                    'animation-fill-mode': "forwards"
-                }, 500);
-                $('.img2').animate({
-                    'transform': 'translateX(100%)',
-                    'animation-fill-mode': "forwards"
-                }, 500);
-                $('.img3').animate({
-                    'transform': 'translateX(100%)',
-                    'animation-fill-mode': "forwards"
-                }, 500);
-            // } 
+            if ($('.img1').css('left') === '0px') {
+                $('.img1').css({
+                    'left': '100%' 
+                });
+                $('.img2').css({
+                    'left': '0px'
+                });
+                $('.two').css('background-color', '#717171');
+                $('.two').siblings().css('background-color', '#bbb');
+                $('.img3').css({
+                    'left': '-100%'
+                });
+            } else if ($('.img2').css('left') === '0px') {
+                $('.one').css('background-color', '#717171');
+                $('.one').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '200%' 
+                });
+                $('.img2').css({
+                    'left': '100%'
+                });
+                $('.img3').css({
+                    'left': '0px'
+                });
+            } 
         })
 
         intro.addEventListener('swiped-left', () => {
-            // if ($('.img1').css('left') !== '0') {
-                $('.img1').animate({
-                    'transform': 'translateX(-100%)',
-                    'animation-fill-mode': "forwards"
-                }, 500);
-                $('.img2').animate({
-                    'transform': 'translateX(-100%)',
-                    'animation-fill-mode': "forwards"
-                }, 500);
-                $('.img3').animate({
-                    'transform': 'translateX(-100%)',
-                    'animation-fill-mode': "forwards"
-                }, 500);
-            // } 
+            if ($('.img3').css('left') === '0px') {
+                $('.two').css('background-color', '#717171');
+                $('.two').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '100%' 
+                    
+                });
+                $('.img2').css({
+                    'left': '0px'
+                });
+                $('.img3').css({
+                    'left': '-100%'
+                });
+            } else if ($('.img2').css('left') === '0px') {
+                $('.three').css('background-color', '#717171');
+                $('.three').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '0px' 
+                    
+                });
+                $('.img2').css({
+                    'left': '-100%'
+                });
+                $('.img3').css({
+                    'left': '-200%'
+                });
+            } 
         })
 
 
         $('#workmenu').hide();
-      
-    //     $('.collaborations').slideDown('slow');
-
-    // $('.open-transcriptions').on('click', () => {
-    //     $('.transcriptions').slideToggle('slow');
-    //     $('.simulations').slideUp('slow');
-    //     $('.collaborations').slideUp('slow');
-    //     $('.open-transcriptions').find('.icon').toggleClass('rotate');
-    //     $('.open-simulations').find('.icon').removeClass('rotate');
-    //     $('.open-collaborations').find('.icon').removeClass('rotate');
-    // })
-
-    // $('.open-simulations').on('click', () => {
-    //     $('.simulations').slideToggle('slow');
-    //     $('.collaborations').slideUp('slow');
-    //     $('.transcriptions').slideUp('slow');
-    //     $('.open-simulations').find('.icon').toggleClass('rotate');
-    //     $('.open-collaborations').find('.icon').removeClass('rotate');
-    //     $('.open-transcriptions').find('.icon').removeClass('rotate');
-    // })
-    
-    // $('.open-collaborations').on('click', () => {
-    //     $('.collaborations').slideToggle('slow');
-    //     $('.transcriptions').slideUp('slow');
-    //     $('.simulations').slideUp('slow');
-    //     $('.open-collaborations').find('.icon').toggleClass('rotate');
-    //     $('.open-transcriptions').find('.icon').removeClass('rotate');
-    //     $('.open-simulations').find('.icon').removeClass('rotate');
-    // })
-
 
     //hide menu when scrolling down and show it when moving up
     let oldValue = 0;
@@ -119,7 +108,92 @@ $(document).ready(() => {
     oldValue = newValue;
     });
 
-    } else if ((x.matches || y.matches) && b.matches && c.matches && d.matches && a.matches) {
+    } else if ((x.matches || y.matches) && z.matches && f.matches) {
+        //mobile
+        
+        //making little slideshow at pages with 3 imgs in a row
+        const intro = document.getElementById('intro');
+        $('.dot').show();
+        $('.three').css('background-color', '#717171');
+        $('.three').siblings().css('background-color', '#bbb');
+
+        intro.addEventListener('swiped-right', () => {
+            if ($('.img1').css('left') === '0px') {
+                $('.img1').css({
+                    'left': '100%' 
+                });
+                $('.img2').css({
+                    'left': '0px'
+                });
+                $('.two').css('background-color', '#717171');
+                $('.two').siblings().css('background-color', '#bbb');
+                $('.img3').css({
+                    'left': '-100%'
+                });
+            } else if ($('.img2').css('left') === '0px') {
+                $('.one').css('background-color', '#717171');
+                $('.one').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '200%' 
+                });
+                $('.img2').css({
+                    'left': '100%'
+                });
+                $('.img3').css({
+                    'left': '0px'
+                });
+            } 
+        })
+
+        intro.addEventListener('swiped-left', () => {
+            if ($('.img3').css('left') === '0px') {
+                $('.two').css('background-color', '#717171');
+                $('.two').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '100%' 
+                    
+                });
+                $('.img2').css({
+                    'left': '0px'
+                });
+                $('.img3').css({
+                    'left': '-100%'
+                });
+            } else if ($('.img2').css('left') === '0px') {
+                $('.three').css('background-color', '#717171');
+                $('.three').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '0px' 
+                    
+                });
+                $('.img2').css({
+                    'left': '-100%'
+                });
+                $('.img3').css({
+                    'left': '-200%'
+                });
+            } 
+        })
+
+
+        $('#workmenu').hide();
+
+    //hide menu when scrolling down and show it when moving up
+    let oldValue = 0;
+    let newValue = 0;
+    window.addEventListener('scroll', (e) => {
+    newValue = window.pageYOffset;
+    if ((oldValue + 50) < newValue) {
+        $('.topMenu').slideUp('slow');
+        $('#workmenu').animate({'margin-top': '0px'}, 200);
+    } else if ((oldValue - 50) > newValue) {
+        $('.topMenu').slideDown('slow');
+        $('#workmenu').animate({'margin-top': '225px'}, 200);
+    }
+    oldValue = newValue;
+    });
+
+    }  else if ((x.matches || y.matches) && b.matches && c.matches && d.matches && a.matches) {
         //ipad menu control
         
         $('.collaborations').slideDown('slow');

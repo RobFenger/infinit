@@ -346,6 +346,16 @@ p {
   display: none;
 }
 
+.dot {
+  height: 50px;
+  width: 50px;
+  margin: 0 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+}
+
 @media only screen and (max-height: 530px) and (min-height: 480px) {
   #slideshow {
     height: 400px;
@@ -819,6 +829,10 @@ p {
       margin-top: 100px;
       margin-bottom: 100px;
     }
+
+    .dot {
+      display: inline-block;
+    }
 }
 
 /* Portrait  pr 2*/
@@ -1241,6 +1255,10 @@ p {
       margin-top: 100px;
       margin-bottom: 100px;
     }
+    
+    .dot {
+      display: inline-block;
+    }
 }
 
 
@@ -1461,6 +1479,10 @@ p {
     iframe {
       margin-top: 50px;
       margin-bottom: 50px;
+    }
+
+    .dot {
+      display: none;
     }
 
 }
