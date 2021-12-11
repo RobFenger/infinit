@@ -15,7 +15,7 @@ $(document).ready(() => {
     const z = window.matchMedia("(max-device-width: 820px)");
     const e = window.matchMedia("(max-device-width: 414px)");
     const a = window.matchMedia("(orientation: landscape)");
-    // const portrait = window.matchMedia("(orientation: portrait)");
+    const portrait = window.matchMedia("(orientation: portrait)");
     const f = window.matchMedia("(max-device-height: 414px)");
     //ipad menu control--------------------------------in development
     const b = window.matchMedia("(max-device-width: 1366px)");
@@ -24,7 +24,7 @@ $(document).ready(() => {
 
     const intro = document.getElementById('intro');
 
-    if ((x.matches || y.matches) && e.matches) {
+    if ((x.matches || y.matches) && e.matches && portrait.matches) {
         //mobile portrait
 
         $('#workmenu').hide();
