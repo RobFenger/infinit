@@ -25,7 +25,9 @@ $(document).ready(() => {
     
 
     if ((x.matches || y.matches) && e.matches) {
-        //mobile
+        //mobile portrait
+
+        $('#workmenu').hide();
         
         //making little slideshow at pages with 3 imgs in a row
         const intro = document.getElementById('intro');
@@ -93,27 +95,24 @@ $(document).ready(() => {
             } 
         })
 
-
-        $('#workmenu').hide();
-
-    //hide menu when scrolling down and show it when moving up
-    let oldValue = 0;
-    let newValue = 0;
-    window.addEventListener('scroll', (e) => {
-    newValue = window.pageYOffset;
-    if ((oldValue + 50) < newValue) {
-        $('.topMenu').slideUp('slow');
-        $('#workmenu').animate({'margin-top': '0px'}, 200);
-    } else if ((oldValue - 50) > newValue) {
-        $('.topMenu').slideDown('slow');
-        $('#workmenu').animate({'margin-top': '225px'}, 200);
-    }
-    oldValue = newValue;
-    });
+        //hide menu when scrolling down and show it when moving up
+        let oldValue = 0;
+        let newValue = 0;
+        window.addEventListener('scroll', (e) => {
+        newValue = window.pageYOffset;
+        if ((oldValue + 50) < newValue) {
+            $('.topMenu').slideUp('slow');
+        } else if ((oldValue - 50) > newValue) {
+            $('.topMenu').slideDown('slow');
+        }
+        oldValue = newValue;
+        });
 
     } else if ((x.matches || y.matches) && z.matches && f.matches) {
-        //mobile
+        //mobile landscape
         
+        $('#workmenu').hide();
+
         //making little slideshow at pages with 3 imgs in a row
         const intro = document.getElementById('intro');
         $('.dot').show();
@@ -179,22 +178,20 @@ $(document).ready(() => {
         })
 
 
-        $('#workmenu').hide();
+        
 
-    //hide menu when scrolling down and show it when moving up
-    let oldValue = 0;
-    let newValue = 0;
-    window.addEventListener('scroll', (e) => {
-    newValue = window.pageYOffset;
-    if ((oldValue + 50) < newValue) {
-        $('.topMenu').slideUp('slow');
-        $('#workmenu').animate({'margin-top': '0px'}, 200);
-    } else if ((oldValue - 50) > newValue) {
-        $('.topMenu').slideDown('slow');
-        $('#workmenu').animate({'margin-top': '225px'}, 200);
-    }
-    oldValue = newValue;
-    });
+        //hide menu when scrolling down and show it when moving up
+        let oldValue = 0;
+        let newValue = 0;
+        window.addEventListener('scroll', (e) => {
+        newValue = window.pageYOffset;
+        if ((oldValue + 50) < newValue) {
+            $('.topMenu').slideUp('slow');
+        } else if ((oldValue - 50) > newValue) {
+            $('.topMenu').slideDown('slow');
+        }
+        oldValue = newValue;
+        });
 
     }  else if ((x.matches || y.matches) && b.matches && c.matches && d.matches && a.matches) {
         //ipad menu control
@@ -220,25 +217,25 @@ $(document).ready(() => {
         })
     } else {
         //open only simulations
-    $('.simulations').slideDown('slow');
-    $('.open-simulations').find('.icon').addClass('rotate');
-    
-    //open collaborations
-    $('.open-collaborations').on('click', () => {
-            $('.collaborations').slideToggle('slow');
-            $('.transcriptions').slideUp('slow');
-            $('.open-collaborations').find('.icon').toggleClass('rotate');
-            $('.open-transcriptions').find('.icon').removeClass('rotate');
-        })
+        $('.simulations').slideDown('slow');
+        $('.open-simulations').find('.icon').addClass('rotate');
+        
+        //open collaborations
+        $('.open-collaborations').on('click', () => {
+                $('.collaborations').slideToggle('slow');
+                $('.transcriptions').slideUp('slow');
+                $('.open-collaborations').find('.icon').toggleClass('rotate');
+                $('.open-transcriptions').find('.icon').removeClass('rotate');
+            })
 
-    //open transcriptions
-    $('.open-transcriptions').on('click', () => {
-            $('.transcriptions').slideToggle('slow');
-            $('.collaborations').slideUp('slow');
-            $('.open-transcriptions').find('.icon').toggleClass('rotate');
-            $('.open-collaborations').find('.icon').removeClass('rotate');
-        })
-    }
+        //open transcriptions
+        $('.open-transcriptions').on('click', () => {
+                $('.transcriptions').slideToggle('slow');
+                $('.collaborations').slideUp('slow');
+                $('.open-transcriptions').find('.icon').toggleClass('rotate');
+                $('.open-collaborations').find('.icon').removeClass('rotate');
+            })
+        }
 
     //add ranodom glitch effects over the page
     const array = [

@@ -25,6 +25,8 @@ $(document).ready(() => {
 
     if ((x.matches || y.matches) && e.matches) {
         //mobile
+
+        $('#workmenu').hide();
         
         //making little slideshow at pages with 3 imgs in a row
         const intro = document.getElementById('intro');
@@ -90,26 +92,23 @@ $(document).ready(() => {
             } 
         })
 
-
-        $('#workmenu').hide();
-
-    //hide menu when scrolling down and show it when moving up
-    let oldValue = 0;
-    let newValue = 0;
-    window.addEventListener('scroll', (e) => {
-    newValue = window.pageYOffset;
-    if ((oldValue + 50) < newValue) {
-        $('.topMenu').slideUp('slow');
-        $('#workmenu').animate({'margin-top': '0px'}, 200);
-    } else if ((oldValue - 50) > newValue) {
-        $('.topMenu').slideDown('slow');
-        $('#workmenu').animate({'margin-top': '225px'}, 200);
-    }
-    oldValue = newValue;
-    });
+        //hide menu when scrolling down and show it when moving up
+        let oldValue = 0;
+        let newValue = 0;
+        window.addEventListener('scroll', (e) => {
+        newValue = window.pageYOffset;
+        if ((oldValue + 50) < newValue) {
+            $('.topMenu').slideUp('slow');
+        } else if ((oldValue - 50) > newValue) {
+            $('.topMenu').slideDown('slow');
+        }
+        oldValue = newValue;
+        });
 
     } else if ((x.matches || y.matches) && z.matches && f.matches) {
         //mobile
+
+        $('#workmenu').hide();
         
         //making little slideshow at pages with 3 imgs in a row
         const intro = document.getElementById('intro');
@@ -175,23 +174,18 @@ $(document).ready(() => {
             } 
         })
 
-
-        $('#workmenu').hide();
-
-    //hide menu when scrolling down and show it when moving up
-    let oldValue = 0;
-    let newValue = 0;
-    window.addEventListener('scroll', (e) => {
-    newValue = window.pageYOffset;
-    if ((oldValue + 50) < newValue) {
-        $('.topMenu').slideUp('slow');
-        $('#workmenu').animate({'margin-top': '0px'}, 200);
-    } else if ((oldValue - 50) > newValue) {
-        $('.topMenu').slideDown('slow');
-        $('#workmenu').animate({'margin-top': '225px'}, 200);
-    }
-    oldValue = newValue;
-    });
+        //hide menu when scrolling down and show it when moving up
+        let oldValue = 0;
+        let newValue = 0;
+        window.addEventListener('scroll', (e) => {
+        newValue = window.pageYOffset;
+        if ((oldValue + 50) < newValue) {
+            $('.topMenu').slideUp('slow');
+        } else if ((oldValue - 50) > newValue) {
+            $('.topMenu').slideDown('slow');
+        }
+        oldValue = newValue;
+        });
 
     }  else if ((x.matches || y.matches) && b.matches && c.matches && d.matches && a.matches) {
         //ipad menu control

@@ -482,6 +482,7 @@ p {
 @media only screen and (max-width: 1750px) {
   .imageContainer {
     width: 1300px;
+    max-width: 1300px;
   }
 
   .group {
@@ -709,6 +710,7 @@ p {
       top: 225px;
       padding-top: 10px;
       width: 900px;
+      max-width: 900px;
     }
     
     .flexImage {
@@ -881,6 +883,7 @@ p {
       top: 225px;
       padding-top: 10px;
       width: 100%;
+      max-width: 100%;
     }
     
     .device {
@@ -917,6 +920,7 @@ p {
       top: 225px;
       padding-top: 10px;
       width: 65%;
+      max-width: 65%;
     }
     
     .flexImage {
@@ -1091,6 +1095,7 @@ p {
       top: 225px;
       padding-top: 10px;
       width: 2000px;
+      max-width: 2000px;
     }
     
     .flexImage {
@@ -1368,6 +1373,7 @@ p {
       top: 225px;
       padding-top: 100px;
       width: 80%;
+      max-width: 80%;
     }
 
     .flexBox {
@@ -1526,6 +1532,7 @@ p {
     .imageContainer {
       margin-left: 0px;
       width: 100%;
+      max-width: 100%;
     }
 
     #workmenu {
