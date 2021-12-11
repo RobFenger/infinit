@@ -64,27 +64,111 @@ intro-img {
    vertical-align: top;
 }
 
+/* landscape */
 @media only screen 
-  and (max-device-width: 820px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (max-device-width: 820px)
+  and (max-device-height: 414px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+   .intro-img {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+   }  
+   
    .img1 {
-      width: 71%;
-      height: 750px;
+      position: absolute;
+      width: 100%;
+      height: 1250px;
+      top: 0px;
+      transition: left 1s;
+      left: 0px;
    }
 
    .right-img {
-      width: 27%;
-      height: 750px;
+      width: 100%;
+      height: 1250px;
+      position: relative;
+      top: 0px;
    }
 
    .img2 {
       width: 100%;
-      height: 49.6%;
+      height: 100%;
+      position: absolute;
+      left: -100%;
+      top: 0px;
+      transition: left 1s;
    }
 
    .img3 {
       width: 100%;
-      height: 49.6%;
+      height: 100%;
+      position: absolute;
+      left: -200%;
+      top: 0px;
+      transition: left 1s;
+   }
+
+   .fig1 {
+   width: 30%;
+}
+
+.fig2 {
+   width: 34%;;
+   vertical-align: top;
+}
+
+.fig3 {
+   width: 34%;
+   vertical-align: top;
+}
+}
+
+/* portrait */
+@media only screen 
+  and (max-device-width: 414px)
+  and (max-device-height: 820px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {   
+   .intro-img {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+   }  
+   
+   .img1 {
+      position: absolute;
+      width: 100%;
+      height: 850px;
+      top: 0px;
+      transition: left 1s;
+      left: 0px;
+   }
+
+   .right-img {
+      width: 100%;
+      height: 850px;
+      position: relative;
+      top: 0px;
+   }
+
+   .img2 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -100%;
+      top: 0px;
+      transition: left 1s;
+   }
+
+   .img3 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -200%;
+      top: 0px;
+      transition: left 1s;
    }
 
    .fig1 {
@@ -92,13 +176,17 @@ intro-img {
    }
 
    .fig2 {
-      width: 33%;
+      width: 34%;
+      vertical-align: top;
    }
 
    .fig3 {
       width: 33%;
+      vertical-align: top;
    }
 }
+
+
 
 @media only screen 
   and (min-device-width: 768px) 
@@ -107,10 +195,26 @@ intro-img {
   and (-webkit-min-device-pixel-ratio: 2) {
    .img1 {
       height: 1550px;
+      width: 72%;
    }
 
    .right-img {
       height: 1550px;
+      width: 27%;
+   }
+
+   .fig1 {
+      width: 30%;
+   }
+
+   .fig2 {
+      width: 34%;
+      vertical-align: top;
+   }
+
+   .fig3 {
+      width: 34%;
+      vertical-align: top;
    }
 }
 
@@ -178,7 +282,7 @@ intro-img {
           <div class="title">Panoptic Emissions (2018)</div>
           <div class="subtitle">Composition | Quadrophonic Sound</div>
 
-          <div class="intro-img">
+          <div class="intro-img" id="intro">
             <img class="img1" src="P1010522.JPG">
       
       
@@ -187,6 +291,12 @@ intro-img {
         <img class="img3" src="P1010488.JPG">
       </div>
       </div> 
+
+      <div style="text-align:center">
+         <span class="dot one"></span>
+         <span class="dot two"></span>
+         <span class="dot three"></span>
+       </div>
 
       <iframe width="100%" class="soundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/431425425&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
  

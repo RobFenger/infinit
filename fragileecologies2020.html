@@ -46,53 +46,98 @@
    height: 223px;
 }
 
+/* landscape */
 @media only screen 
-  and (max-device-width: 820px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-  .img1 {
-    width: 62%;
-    height: 450px;
-  }
-
-  .right-img {
-    width: 36%;
-    height: 450px;
-  }
-
-  .img2 {
-    width: 100%;
-    height: 223px;
-  }
-
-  .img3 {
-    width: 100%;
-    height: 223px;
-  }
-}
-
-@media only screen 
-  and (max-device-width: 820px) 
+  and (max-device-width: 820px)
+  and (max-device-height: 414px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
-  .img1 {
-    width: 62%;
-    height: 650px;
-  }
+   .intro-img {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+   }  
+   
+   .img1 {
+      position: absolute;
+      width: 100%;
+      height: 1250px;
+      top: 0px;
+      transition: left 1s;
+      left: 0px;
+   }
 
-  .right-img {
-    width: 36%;
-    height: 650px;
-  }
+   .right-img {
+      width: 100%;
+      height: 1250px;
+      position: relative;
+      top: 0px;
+   }
 
-  .img2 {
-    width: 100%;
-    height: 323px;
-  }
+   .img2 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -100%;
+      top: 0px;
+      transition: left 1s;
+   }
 
-  .img3 {
-    width: 100%;
-    height: 323px;
-  }
+   .img3 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -200%;
+      top: 0px;
+      transition: left 1s;
+   }
+}
+
+/* portrait */
+@media only screen 
+  and (max-device-width: 414px)
+  and (max-device-height: 820px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {   
+   .intro-img {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+   }  
+   
+   .img1 {
+      position: absolute;
+      width: 100%;
+      height: 850px;
+      top: 0px;
+      transition: left 1s;
+      left: 0px;
+   }
+
+   .right-img {
+      width: 100%;
+      height: 850px;
+      position: relative;
+      top: 0px;
+   }
+
+   .img2 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -100%;
+      top: 0px;
+      transition: left 1s;
+   }
+
+   .img3 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -200%;
+      top: 0px;
+      transition: left 1s;
+   }
 }
 
 @media only screen 
@@ -102,10 +147,12 @@
   and (-webkit-min-device-pixel-ratio: 2) {
     .img1 {
     height: 1300px;
+    width: 63%;
   }
 
   .right-img {
     height: 1300px;
+    width: 36%;
   }
 
   .img2 {
@@ -182,7 +229,7 @@
           <div class="title">Fragile Ecologies (2020) <span id="collab">with Robin Koek & Tamas Marquetant </span></div>
           <div class="title">Audiovisual Spatial Installation | Octophonic Sound</div>
 
-          <div class="intro-img">
+          <div class="intro-img" id="intro">
             <img class="img1" src="IMG_7446.jpg">
       
       
@@ -190,6 +237,12 @@
         <img class="img2" src="IMG_6753_R.jpg">
         <img class="img3" src="IMG_7342.jpg">
       </div>
+      </div>
+
+      <div style="text-align:center">
+        <span class="dot one"></span>
+        <span class="dot two"></span>
+        <span class="dot three"></span>
       </div>
 
 

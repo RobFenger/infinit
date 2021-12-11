@@ -84,7 +84,7 @@ a:hover {
   position: fixed; 
   margin-top: 80px;
   font-size: 16px;
-  width: 200px;
+  width: 225px;
 }
 
 .icon {
@@ -112,10 +112,11 @@ a:hover {
 
 .imageContainer {
   position: relative;
-  margin-left: 250px;
+  margin-left: 300px;
   top: 85px;
   padding-top: 10px;
   width: 1000px;
+  max-width: 1000px;
 }
 
 .flexBox {
@@ -178,7 +179,8 @@ figcaption {
   position: relative;
   margin-left: 250px;
   top: 85px;
-  width: 1000px;
+  width: 900px;
+  max-width: 900px;
 }
 
 h1 {
@@ -304,7 +306,7 @@ p {
 }
 
 .soundcloud {
-  height: 166px;
+  height: 110px;
 }
 
 .soundcloud-text {
@@ -314,6 +316,8 @@ p {
 .video {
   height: 600px;
 }
+
+
 
 .soundcloud-height {
   height: 166px;
@@ -725,6 +729,7 @@ p {
         margin-left: 0px;
         top: 225px;
         width: 100%;
+        max-width: 100%;
     }
 
     .flexBox {
@@ -1103,6 +1108,7 @@ p {
     .group {
       margin-left: 10%;
       width: 80%;
+      max-width: 80%;
     }
 
     .topMenu {
@@ -1386,6 +1392,7 @@ p {
         margin-left: 0px;
         top: 225px;
         width: 100%;
+        max-width: 100%;
     }
     
     .information b {
@@ -1506,6 +1513,7 @@ p {
       margin-left: 20%;
       top: 225px;
       width: 80%;
+      max-width: 80%;
   }
   }
 
