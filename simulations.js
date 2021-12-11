@@ -22,7 +22,7 @@ $(document).ready(() => {
     const c = window.matchMedia("(min-device-width: 768px)");
     const d = window.matchMedia("(min-device-height: 768px)");
 
-    
+    const intro = document.getElementById('intro');
 
     if ((x.matches || y.matches) && e.matches) {
         //mobile portrait
@@ -43,7 +43,6 @@ $(document).ready(() => {
          });
         
         //making little slideshow at pages with 3 imgs in a row
-        const intro = document.getElementById('intro');
         $('.dot').show();
         $('.three').css('background-color', '#717171');
         $('.three').siblings().css('background-color', '#bbb');
@@ -126,7 +125,6 @@ $(document).ready(() => {
          });
 
         //making little slideshow at pages with 3 imgs in a row
-        const intro = document.getElementById('intro');
         $('.dot').show();
         $('.three').css('background-color', '#717171');
         $('.three').siblings().css('background-color', '#bbb');
