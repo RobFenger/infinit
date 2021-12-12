@@ -634,7 +634,7 @@ p {
 
 /* Portrait and Landscape  pr 2*/
 @media only screen 
-  and (max-device-width: 736px) 
+  and (max-device-width: 820px) 
   and (-webkit-min-device-pixel-ratio: 2){  
     .topMenu {
       height: 220px;
@@ -901,8 +901,8 @@ p {
 
     @media only screen 
   and (max-device-width: 820px)
-  and (max-device-height: 414px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
     #slideshow {
       top: 250px;
       right: 25%;

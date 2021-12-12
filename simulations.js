@@ -106,7 +106,7 @@ $(document).ready(() => {
                 });
             } 
         })
-    } else if ((x.matches || y.matches) && z.matches && f.matches) {
+    } else if ((x.matches || y.matches) && z.matches && a.matches) {
         //mobile landscape
         
         $('#workmenu').hide();
