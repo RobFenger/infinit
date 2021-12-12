@@ -24,7 +24,7 @@ $(document).ready(() => {
 
     const intro = document.getElementById('intro');
 
-    if ((x.matches || y.matches) && e.matches && portrait) {
+    if ((x.matches || y.matches) && e.matches) {
         //mobile portrait
 
         $('#workmenu').hide();
