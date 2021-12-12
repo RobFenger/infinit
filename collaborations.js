@@ -25,7 +25,7 @@ $(document).ready(() => {
 
     
 
-    if ((x.matches || y.matches) && e.matches) {
+    if ((x.matches || y.matches) && e.matches && portrait) {
         //mobile portrait
 
         $('#workmenu').hide();
@@ -189,6 +189,7 @@ $(document).ready(() => {
         //ipad menu control
         
         $('.collaborations').slideDown('slow');
+        $('.open-collaborations').find('.icon').addClass('rotate');
         // $('.simulations').slideDown('slow');
         // $('.transcriptions').slideDown('slow');
         

@@ -24,7 +24,7 @@ $(document).ready(() => {
 
     const intro = document.getElementById('intro');
 
-    if ((x.matches || y.matches) && e.matches && portrait.matches) {
+    if ((x.matches || y.matches) && e.matches && portrait) {
         //mobile portrait
 
         $('#workmenu').hide();
@@ -106,7 +106,7 @@ $(document).ready(() => {
                 });
             } 
         })
-    } else if ((x.matches || y.matches) && z.matches && a.matches) {
+    } else if ((x.matches || y.matches) && z.matches && f.matches) {
         //mobile landscape
         
         $('#workmenu').hide();
