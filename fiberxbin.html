@@ -142,28 +142,48 @@
 
 
 @media only screen 
-  and (min-device-width: 820px) 
+  and (min-device-width: 768px) 
   and (max-device-width: 1366px)
   and (min-device-height: 768px)
   and (-webkit-min-device-pixel-ratio: 2) {
+   .intro-img {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+   }  
+   
    .img1 {
-      width: 57%;
-      height: 1500px;
+      position: absolute;
+      width: 100%;
+      height: 1700px;
+      top: 0px;
+      transition: left 1s;
+      left: 0px;
    }
 
    .right-img {
-      height: 1500px;
-      width: 41%;
+      width: 100%;
+      height: 1700px;
+      position: relative;
+      top: 0px;
    }
 
    .img2 {
       width: 100%;
-      height: 748px;
+      height: 100%;
+      position: absolute;
+      left: -100%;
+      top: 0px;
+      transition: left 1s;
    }
 
    .img3 {
-      height: 748px;
       width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -200%;
+      top: 0px;
+      transition: left 1s;
    }
 
 }

@@ -207,7 +207,135 @@ $(document).ready(() => {
             $('.collaborations').slideToggle('slow');
             $('.open-collaborations').find('.icon').toggleClass('rotate');
         })
-    } else {
+
+        //making little slideshow at pages with 3 imgs in a row
+        $('.dot').show();
+        $('.three').css('background-color', '#717171');
+        $('.three').siblings().css('background-color', '#bbb');
+
+        intro.addEventListener('swiped-right', () => {
+            if ($('.img1').css('left') === '0px') {
+                $('.img1').css({
+                    'left': '100%' 
+                });
+                $('.img2').css({
+                    'left': '0px'
+                });
+                $('.two').css('background-color', '#717171');
+                $('.two').siblings().css('background-color', '#bbb');
+                $('.img3').css({
+                    'left': '-100%'
+                });
+            } else if ($('.img2').css('left') === '0px') {
+                $('.one').css('background-color', '#717171');
+                $('.one').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '200%' 
+                });
+                $('.img2').css({
+                    'left': '100%'
+                });
+                $('.img3').css({
+                    'left': '0px'
+                });
+            } 
+        })
+
+        intro.addEventListener('swiped-left', () => {
+            if ($('.img3').css('left') === '0px') {
+                $('.two').css('background-color', '#717171');
+                $('.two').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '100%' 
+                    
+                });
+                $('.img2').css({
+                    'left': '0px'
+                });
+                $('.img3').css({
+                    'left': '-100%'
+                });
+            } else if ($('.img2').css('left') === '0px') {
+                $('.three').css('background-color', '#717171');
+                $('.three').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '0px' 
+                    
+                });
+                $('.img2').css({
+                    'left': '-100%'
+                });
+                $('.img3').css({
+                    'left': '-200%'
+                });
+            } 
+        })
+    } else if ((x.matches || y.matches) && b.matches && c.matches && d.matches) {
+        //making little slideshow at pages with 3 imgs in a row
+        $('.dot').show();
+        $('.three').css('background-color', '#717171');
+        $('.three').siblings().css('background-color', '#bbb');
+
+        intro.addEventListener('swiped-right', () => {
+            if ($('.img1').css('left') === '0px') {
+                $('.img1').css({
+                    'left': '100%' 
+                });
+                $('.img2').css({
+                    'left': '0px'
+                });
+                $('.two').css('background-color', '#717171');
+                $('.two').siblings().css('background-color', '#bbb');
+                $('.img3').css({
+                    'left': '-100%'
+                });
+            } else if ($('.img2').css('left') === '0px') {
+                $('.one').css('background-color', '#717171');
+                $('.one').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '200%' 
+                });
+                $('.img2').css({
+                    'left': '100%'
+                });
+                $('.img3').css({
+                    'left': '0px'
+                });
+            } 
+        })
+
+        intro.addEventListener('swiped-left', () => {
+            if ($('.img3').css('left') === '0px') {
+                $('.two').css('background-color', '#717171');
+                $('.two').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '100%' 
+                    
+                });
+                $('.img2').css({
+                    'left': '0px'
+                });
+                $('.img3').css({
+                    'left': '-100%'
+                });
+            } else if ($('.img2').css('left') === '0px') {
+                $('.three').css('background-color', '#717171');
+                $('.three').siblings().css('background-color', '#bbb');
+                $('.img1').css({
+                    'left': '0px' 
+                    
+                });
+                $('.img2').css({
+                    'left': '-100%'
+                });
+                $('.img3').css({
+                    'left': '-200%'
+                });
+            } 
+        })
+    } 
+    
+    else {
         //open only collaborations
     $('.collaborations').slideDown('slow');
     $('.open-collaborations').find('.icon').addClass('rotate');

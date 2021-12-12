@@ -1500,7 +1500,7 @@ p {
     }
 
     .dot {
-      display: none;
+      display: inline-block;
     }
 
 }
