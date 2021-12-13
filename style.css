@@ -59,6 +59,36 @@ body {
   display: block;
 }
 
+@media only screen and (max-height: 480px) {
+  .highlight {
+    height: 350px;
+  }
+
+  .highlight-long-invert {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-height: 530px) and (min-height: 480px) {
+  .highlight {
+    height: 400px;
+  }
+
+  .highlight-long-invert {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-height: 580px) and (min-height: 530px) {
+  .highlight {
+    height: 450px;
+  }
+
+  .highlight-long-invert {
+    height: 450px;
+  }
+}
+
 .blurry {
   position: fixed;
   width: 110%;
