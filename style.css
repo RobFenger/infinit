@@ -1,10 +1,88 @@
 body {
+  margin-top: 0px;
   margin-left: 5%;
   margin-right: 5%;
   padding: 0px;
   transition: background-color 2s, color 2s;
   background-color: white;
   color: black;
+  position: relative;
+}
+
+.highlight {
+  width: 40%;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 4;
+  background-color: white;
+  padding: 40px;
+  display: block;
+}
+
+.highlight-invert {
+  width: 40%;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 4;
+  background-color: black;
+  padding: 40px;
+  display: block;
+}
+
+.highlight-long {
+  width: auto;
+  height: 500px;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 4;
+  background-color: white;
+  padding: 40px;
+  display: block;
+}
+
+.highlight-long-invert {
+  width: auto;
+  height: 500px;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 4;
+  background-color: black;
+  padding: 40px;
+  display: block;
+}
+
+.blurry {
+  position: fixed;
+  width: 110%;
+  height: 100%;
+  top: 0px;
+  left: -5%;
+  background-color: white;
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.animateDown {
+  animation: animateDown ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animateDown {
+  0% {
+    top: -50%;
+  }
+
+  100% {
+    top: 50%;
+  }
 }
 
 a {
@@ -50,6 +128,8 @@ a:hover {
   transition: color 2s, background-color 2s;
   background-color: white;
   color: black;
+  z-index: 1;
+  margin-top: 0px;
 }
 
 .menuu  {

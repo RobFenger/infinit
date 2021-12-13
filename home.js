@@ -19,7 +19,10 @@ if (y.matches && z.matches && a.matches) {
     slideShowPics = [
     "IMG_6517.jpg",
     "IMG_6518.jpg",
-    "IMG_6516.jpg"
+    "IMG_6516.jpg",
+    "856B9F5F-82AF-44CC-B6DB-78328EEBE107.jpg",
+    "GovernorsoftheAether_8.JPG",
+    "MG_123.JPG"
 ]
 }
 

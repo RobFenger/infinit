@@ -357,7 +357,77 @@ $(document).ready(() => {
                 $('.open-transcriptions').find('.icon').toggleClass('rotate');
                 $('.open-collaborations').find('.icon').removeClass('rotate');
             })
-        }
+
+
+        //click on picture to highlight the picture and make background blurry
+        let highlightClass;
+        let longPic;
+
+        $('img').on('click', event => {
+            if ($('h1').prop('style').color == 'white' ) {
+                highlightClass = 'highlight-invert';
+                longPic = 'highlight-long-invert';
+            } else {
+                highlightClass = 'highlight';
+                longPic = 'highlight-long';
+            }
+
+                const image = $(event.currentTarget).attr('src');
+
+                const blur = $(document.createElement('div')).attr('id', 'blur');
+                blur.addClass('blurry');
+                blur.appendTo($('body'));
+
+                const img = $('<img />',
+                { id: 'highlightIMG',
+                src: image,
+                });
+                
+
+                let longPics = [
+                    "IMG_6517.jpg",
+                    "IMG_6518.jpg",
+                    "IMG_6516.jpg",
+                    "856B9F5F-82AF-44CC-B6DB-78328EEBE107.jpg",
+                    "Luna.jpg",
+                    "Mercury.jpg",
+                    "Venus.jpg",
+                    "Sol.jpg",
+                    "Mars.jpg",
+                    "Jupiter.jpg",
+                    "Saturn.jpg",
+                    "GovernorsoftheAether_8.JPG",
+                    "MG_123.JPG",
+                    "Fig3.2.jpg",
+                    "Fig4.1.jpg",
+                    "Fig4.2.jpg",
+                    "20170728_openaxis_graphic.jpg",
+                    "Impossible_Interaction.jpg"
+                ]
+
+                for (let i = 0; i < longPics.length; i++) {
+                    if (image === longPics[i]) {
+                        img.addClass(longPic);
+                    } else {
+                        img.addClass(highlightClass);
+                    }
+                }
+
+                img.appendTo($('body'));
+
+                $('#highlightIMG').addClass('animateDown');
+
+                $('#blur').on('click', () => {
+                    $('#highlightIMG').slideUp('slow');
+                    $('#blur').remove();
+
+                    timeToSlide = setTimeout(() => {
+                        $('#highlightIMG').remove();
+                    }, 1000); 
+                })
+        })  
+    }
+
 
     //add ranodom glitch effects over the page
     const array = [
